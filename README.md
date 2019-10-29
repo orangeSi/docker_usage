@@ -1,12 +1,13 @@
 ## docker_usage
 <br>
-#### open and login to ubuntun
+
+#### 1.open and login to ubuntun
 ```
 docker run -it ubuntu /bin/bash
 ```
 
 
-#### go int alpine for crystal
+#### 2.go int alpine for crystal
 ```
 docker run -it alpine /bin/ash # and do somethings and exit
 docker commit -a myth -m 'install crystal' 7d40949fa189 alpine_crystal # save the change to new local image  alpine_crystal
@@ -17,12 +18,12 @@ docker commit -a 'myth' -m 'install crystal' 19bc5431d047 ilikeorange/alpine-cry
 docker push ilikeorange/alpine-crystal #push the new image to dockerhub
 ```
 
-#### cp betweent contain and Host
+#### 3.cp betweent contain and Host
 ```
 docker cp 03d0c69f8ed5:/crystal/rr .
 ```
 
-#### docker search images by name
+#### 4.docker search images by name
 ```
 docker search alpine 	 # can not get alpine-crystal
 docker search alpine-crys # can     get apline-crystal
